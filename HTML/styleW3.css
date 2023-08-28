@@ -1,0 +1,67 @@
+body{
+    background-color: yellow;
+    height: 130vh;
+}
+
+.imagedown{
+    display: flex;
+    justify-content: space-evenly;
+    
+    flex-wrap: wrap;
+
+    border: 3px solid black;
+
+}
+
+.imageup{
+    display: flex;
+    justify-content: space-around;
+    height: 600px;
+    
+    flex-wrap: wrap;
+    border: 3px solid black;  
+   
+  
+}
+.box{
+
+    height: 280px;
+    width: 20%; 
+    background-color: blue;
+    margin: 3px; 
+}
+
+.image-box{
+    height: 200px;
+    width: 90%;
+    background-color: blue;
+    margin: 5px;
+    
+    border: 2px solidblack;
+    justify-content: space-evenly;
+}
+
+
+.box2{
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+
+}
+
+.contact{
+
+}
+
+#z{
+    width: 98%;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+#k img{
+    width: 100%;
+}

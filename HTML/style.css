@@ -1,9 +1,9 @@
 .container{
     display: flex;
-    /* justify-content: left;
-    align-items: center;
+    justify-content: left;
+    align-items:end;
     justify-content: space-between;
-    justify-content: space-evenly;*/
+    justify-content: space-evenly;
 
     
     flex-wrap: wrap;
@@ -17,6 +17,7 @@
 
     height: 200px;
     width: 20%;
-    background-color: black;
+    background-color: red;
     margin: 5px;
 }
+
