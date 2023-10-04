@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adv_JS</title>
+
+    <style>
+
+        body{
+            border: 2px solid black;
+            height: 400vh;
+            width: 100vh;
+
+        }
+
+        .mohit{
+            height: 52%;
+            width: 100%;
+            border: 2px solid blue;
+        }
+
+        .div{
+
+            display: inline-block;
+            height: 450px;
+            width: 400px;
+            border: 2px solid red ;
+        }
+
+
+
+    </style>
+
+
+</head>
+<body>
+
+
+    <script>
+        
+        // setInterval(function    (){
+        //     document.write("hi")
+        // }, 1000) 
+
+        // setTimeout(function    (){
+        //     document.write("ooooo")
+        // }, 1000)
+
+        // function prom(a) {
+        //     return new Promise(function(resolve , reject) {
+
+        //         console.log('fetching data........')
+
+        //         setTimeout(function () {
+
+        //             if (a) {
+        //                 resolve('promise pura huaa')
+        //             }
+
+        //             else {
+        //                 reject('goli de gye')
+        //             }
+
+        //         },3000)
+        //         console,log("hello Mohit")
+
+        //     })
+        //     }
+
+
+        // let a=false;
+
+        // let prom = new Promise(function(resolve,reject) {
+
+        //     if(a){
+        //         resolve("promis pura hua")
+        //     }
+
+        //     else{
+
+        //         reject("promis adhura rh gya")
+        //     }
+        // })
+
+
+        //     prom.then((result)=>{
+        //         console.log(result)
+
+        //     })
+        //     .catch((reject)=>{
+        //         console.log(reject)
+        //     })
+
+
+    fetch('https://dummyjson.com/products').then((response)=>{
+        return (response.json());
+    }).then((data)=>{
+       
+        for(i of data.products){
+        // console.log(i.title)
+        // console.log(i.images[0])
+
+
+        // console.log(i)
+
+let div = document.createElement('div')
+
+    div.setAttribute('class','div')
+    
+    let image = document.createElement('img');
+    image.src = i.images[0]
+    image.setAttribute('class','mohit')
+    console.log(image)
+    document.body.append(div)
+    div.append(image)
+
+    let heading =document.createElement('h3')
+    
+
+
+
+       }
+
+    }).catch((error)=>{
+        console.log(error)
+    })
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>py</title>
+</head>
+<body>
+
+
+    <script>
+
+fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=9b8041a6eb26c0070209dc4a927862f3').then((response)=>{
+        return (response.json());
+    }).then((data)=>{
+       
+        for(i of data.results){
+        // console.log(i.title)
+        // console.log(i.images[0])
+
+
+        // console.log(i)
+
+let div = document.createElement('div')
+
+    div.setAttribute('class','div')
+    
+    // let image = document.createElement('img');
+    // image.src = i.backdrop_path[0]
+    // image.setAttribute('class','image')
+    // console.log(image)
+    // document.body.append(div)
+    // div.append(image)
+
+    let heading =document.createElement('h3')
+    heading.textContent=`${i.original_title}`
+    console.log(heading)
+    document.body.append(div)
+    div.append(heading)
+
+    }
+
+    }).catch((error)=>{
+        console.log(error)
+    })
+
+    </script>
+    
+</body>
+</html>

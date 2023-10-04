@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Netflix_2</title>
+        <style>
+            *{
+    margin: 0px;
+    padding: 0px;
+    
+}
+.contaner {
+position: relative;
+    height: 120vh;
+    /* border: 3px solid black; */
+    background-color: black;
+    
+}
+
+
+        /* .box_back{
+            position: absolute;
+            top: 0px;
+            
+            border: 2px solid red;
+            
+            background-color:black; 
+            height: 140VH;
+            width: 99.6%;
+            opacity: 70%;
+            color: blue;
+            
+        } */
+
+        
+        
+        .header{
+            position: absolute;
+            top: 1%;
+            left: 1%;
+            
+            height: 10vh;           
+            z-index: 100;
+        }
+        
+        #pp{
+            z-index: 100;
+        }
+        
+        .contaner  img {
+            opacity: 40%;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .centerbox {
+            padding: px;
+            
+            position: absolute;
+            top: 12%;
+            left: 37%;
+            height: 50%;
+            min-width: 22%;
+            max-width: 22%;
+            /* border: 3px solid red; */
+            background-color: rgba(0,0,0,.75);
+            
+        }
+        
+        .singin{
+            overflow: hidden;
+            margin: 35px;
+            /* border: 3px solid blue; */
+            height: 90%;
+            
+        }
+        
+        .boxup{
+            /* position: absolute; */
+            height:  61%;
+            /* width: 100%; */
+            /* border: 3px solid white; */
+
+        }
+
+        .singninwhite{
+            /* border: 3px solid red; */
+            height: 15% ;
+            width: 98%;
+        }
+
+        .login, .pass{
+            /* border: 2px solid green; */
+            margin-top: 15px;
+            height: 15%;
+            width: 98%;
+        }
+
+        .button{
+            height: 35%;
+            /* border: 2px solid green; */
+        }
+
+        .boxtext{
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .help{
+            display: flex;
+            justify-content: right;
+            /* border: 2px solid black; */
+            height: 100%;
+            width: 38%;
+        }
+        #kk{
+            width: 60%;
+            /* border: 1px solid yellow; */
+        }
+
+        .boxdown{
+            /* border: 2px solid red; */
+            height: 38%;
+        }
+
+        .newto{
+            display: flex;
+            /* border: 1px solid red; */
+            height: 15%;
+            width: 100%;
+        }
+        .leftbox{
+            /* border: 2px solid red; */
+            width: 46.5%;
+        }
+        
+        .footer{
+            position: absolute;
+            bottom: 0px;
+            height: 25%;
+            width: 100%;
+            border: 2px solid red;
+        }
+        
+        
+        </style>
+
+
+</head>
+
+<body>
+    
+    <div class="contaner">
+        
+        <img src="https://assets.nflxext.com/ffe/siteui/vlv3/42df4e1f-bef6-499e-87ff-c990584de314/5e7c383c-1f88-4983-b4da-06e14c0984ba/IN-en-20230904-popsignuptwoweeks-perspective_alpha_website_medium.jpg"
+        alt="">
+        
+        <div class="box_back">
+            <!-- <div class="footer"></div> -->
+ 
+       
+         </div>
+
+
+
+        <head id="header">
+        <div class="header" id="pp">
+            <img src="Netflix_Logo_PMS.png" alt="">
+        </div>
+        </head>
+
+         
+             <div class="centerbox">
+                <div class="singin">
+                    <div class="boxup">
+                    <div class="singninwhite" style="color: white">
+                        <h2>Sing In</h2>    
+                    </div>
+                    <div class="login" >
+                        <input type="email" placeholder="Email or phone number" style="width: 99%; height: 100%; background-color: #333; color: #8c8c8c;">
+                    </div>
+                    <br>
+                    <div class="pass">
+                        <input type="password" placeholder="password" style="width: 99%; height: 100%; background-color: #333; color: #8c8c8c;"> 
+                    </div>
+                    <div class="button">
+                        <br>
+                        <button style="height: 40%; width: 100%; background-color: red; color: white;"> Sign In</button>
+                        <div class="boxtext" style="color: #8c8c8c; margin-top: 15px;"">
+                        <div class="chechbox" id="kk" >
+                       <input type="checkbox"> Remember me 
+                        </div>
+                       <div class="help" id="bb">Need Help?</div>
+                    </div>
+                </div>
+             </div>
+                    <div class="boxdown">
+                        <div class="newto" style="color: #8c8c8c;">
+                            New to Netflix?<span style="color: white;"> <b>Sign up now.</b></span>
+                        </div>
+                        <div class="learnmore" style="color: #8c8c8c;">
+                            This page is protected by Google reCAPTCHA to ensure you're not a bot.<span style="color: blue;"> Learn more.</span>
+                        </div>
+             </div>
+            
+            
+        
+        </div>
+        
+        
+    </div>
+    <div class="footer">
+        sfg
+    </div>
+
+    
+</body>
+
+</html>
