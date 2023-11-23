@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+<style>
+
+.contaner{
+    height:100vh;
+    border: 3px solid black;
+    
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+
+}
+@media (max-width: 900px) {
+    #a, #b{
+        background-color: red;
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    
+    
+    #c, #d{
+        display: none;
+    } 
+
+    
+}
+    .Header{
+        display: flex;
+        justify-content: space-evenly;
+        height: 10vh;
+        border: 2px solid black;
+        align-items: center;
+    }
+    
+ 
+    
+.box1{
+    
+    height: 70%;
+    width: 30%;
+    border: 3px solid black;
+}
+
+.box2{
+    height: 70%;
+    width: 30%;
+    border: 3px solid black;
+}
+
+@media (max-width:900px){
+    #box1{
+        display: none;
+    }
+    #box2 {
+        width: 70%;
+       background-color: red;
+}
+}
+
+</style>
+
+
+</head>
+<body>
+    
+    
+    <header class="Header" >
+       
+        <p id="a">mohit</p>
+        <p id="b">rohit</p>
+        <p id="c">ankit</p>
+        <p id="d">aman</p>
+        
+    </header>
+    <div class="contaner">
+    <div class="box1" id="box1">
+        
+    </div>
+    <div class="box2" id="box2">
+        
+    </div>
+</div>
+
+</body>
+</html>

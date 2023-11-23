@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    justify-content: left;
+    align-items:end;
+    justify-content: space-between;
+    justify-content: space-evenly;
+
+    
+    flex-wrap: wrap;
+
+
+    background-color: yellow;
+    height: 100vh;
+
+}
+.box{
+
+    height: 200px;
+    width: 20%;
+    background-color: red;
+    margin: 5px;
+}
+
+footer{
+    height: 20%;
+    background-color: black;
+}

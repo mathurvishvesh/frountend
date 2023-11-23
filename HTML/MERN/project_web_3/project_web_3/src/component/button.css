@@ -1,0 +1,12 @@
+.button {
+    width: 100%;
+
+}
+
+.text {
+    align-content: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    justify-items: center !important;
+
+}
