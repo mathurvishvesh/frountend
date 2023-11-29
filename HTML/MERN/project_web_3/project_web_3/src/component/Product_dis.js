@@ -1,9 +1,25 @@
 import React from 'react'
 import './Product_dis.css'
+import data_vegetable from '../utils/data_vegetables';
+import { useParams } from 'react-router-dom';
+import NavBar from './NavBar'
+import Fotter from './Fotter';
+const Product_dis = () => {
+    const { id } = useParams(); // Get the 'id' parameter from the URL
 
-const Product_dis = ({ product }) => {
+    const product = data_vegetable.find((item) => item.id === parseInt(id));
+
+    if (!product) {
+        console.log(`Product with id ${id} not fount`);
+
+        return <div>Product not found</div>;
+    }
+
+
     return (
-        <div>
+        <>
+            <NavBar />
+
 
             <div className="container">
                 {/* product */}
@@ -19,16 +35,16 @@ const Product_dis = ({ product }) => {
                                     </ol>
                                     <div className="carousel-inner">
                                         {/* Slide 1 */}
-                                        <div className="item active">
-                                            <img src={product.imgsrc} className="img-responsive" alt />
+                                        <div className="item active border border-primary">
+                                            <img src={product.imgsrc1} className="img-fluid" alt />
                                         </div>
                                         {/* Slide 2 */}
-                                        <div className="item">
-                                            <img src="https://www.bootdey.com/image/700x400/87CEFA/000000" className="img-responsive" alt />
+                                        <div className="item border border-primary">
+                                            <img src={product.imgsrc2} className="img-responsive" alt />
                                         </div>
                                         {/* Slide 3 */}
                                         <div className="item">
-                                            <img src="https://www.bootdey.com/image/700x400/B0C4DE/000000" className="img-responsive" alt />
+                                            <img src={product.imgsrc3} className="img-responsive" alt />
                                         </div>
                                     </div>
                                     <a className="left carousel-control" href="#myCarousel-2" data-slide="prev"> <span className="glyphicon glyphicon-chevron-left" /> </a>
@@ -50,7 +66,7 @@ const Product_dis = ({ product }) => {
                             </h2>
                             <hr />
                             <h3 className="price-container">
-                                $129.54
+                                {product.cost}
                                 <small>*includes tax</small>
                             </h3>
                             <div className="certified">
@@ -183,8 +199,13 @@ const Product_dis = ({ product }) => {
                 {/* end product */}
             </div>
 
+            <Fotter />
 
-        </div>
+        </>
+
+
+
+
     )
 }
 

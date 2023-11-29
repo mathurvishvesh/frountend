@@ -17,6 +17,7 @@ import Veg_map from '../component/Veg_map';
 import Fruits_Veg_map from '../component/Fruits_Veg_map';
 import Daily_Staples_map from '../component/Daily_Staples_map';
 import Beverages_map from '../component/Beverages_map';
+import Log_in from './Log_in';
 
 function HomePage() {
 
@@ -33,8 +34,9 @@ function HomePage() {
             <Slider />
             <div>
 
+                <Log_in />
                 <Bank_Offer />
-                <Product />
+                {/* <Product /> */}
                 <Veg_map />
                 <Fruits_Veg_map />
                 {/* <Fruits_Vegetables /> */}

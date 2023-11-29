@@ -18,7 +18,7 @@ const NavBar = () => {
             <ul>
               <li><a href="#">Whats Next</a></li>
               <li><a href="#">LogIn</a></li>
-              <li><a href="#">SignUp</a></li>
+              <li><a href="../Pages/Log_in.js">SignUp</a></li>
               <li><a href="#">You Cart
                 <img src='' />
               </a></li>
